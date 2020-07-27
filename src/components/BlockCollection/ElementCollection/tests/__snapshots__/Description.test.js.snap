@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description Should match snapshot 1`] = `
+<DocumentFragment>
+  <textarea
+    class="ant-input"
+    data-testid="description-text"
+    placeholder="Description"
+    rows="4"
+  />
+</DocumentFragment>
+`;

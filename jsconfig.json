@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "allowSyntheticDefaultImports": true,
+        "module": "commonjs",
+        "baseUrl": "./",
+        "paths": {
+            "Classes/*": ["./src/classes/*.js"],
+            "Components/*": ["./src/components/*"],
+            "Constants/*": ["./src/constants/*"],
+            "Services": ["./src/services/index.js"],
+            "State/*": ["./src/state/*"],
+            "Utils/*": ["./src/utils/*"],
+            "Hooks/*": ["./src/hooks"],
+            "Mocks/*": ["./src/mocks"]
+        }
+    },
+    "exclude": ["node_modules", "build"]
+}

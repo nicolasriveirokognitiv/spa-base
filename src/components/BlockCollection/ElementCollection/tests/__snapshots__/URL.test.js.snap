@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`URL Should match snapshot 1`] = `
+<DocumentFragment>
+  <span
+    class="ant-input-group-wrapper"
+  >
+    <span
+      class="ant-input-wrapper ant-input-group"
+    >
+      <span
+        class="ant-input-group-addon"
+      >
+        https://
+      </span>
+      <input
+        class="ant-input"
+        type="text"
+        value=""
+      />
+    </span>
+  </span>
+</DocumentFragment>
+`;

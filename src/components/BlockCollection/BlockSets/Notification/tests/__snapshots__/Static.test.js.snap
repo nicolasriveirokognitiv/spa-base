@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Static Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container-full"
+  >
+    <div
+      class="styled-wrapper    notification-block"
+    >
+      <div
+        class="notification-block-title"
+      />
+      <div
+        class="notification-block-description"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

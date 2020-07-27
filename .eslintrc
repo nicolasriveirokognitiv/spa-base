@@ -1,0 +1,69 @@
+{
+    "extends": "arzion",
+    "parser": "babel-eslint",
+    "overrides": [
+        {
+            "files": ["*.test.js"],
+            "rules": {
+                "react/destructuring-assignment": 0
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    },
+    "plugins": [
+        "react-hooks",
+        "align-assignments"
+    ],
+    "rules": {
+        "indent": [ 
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "padded-blocks": [
+            "error",
+            {
+                "switches": "never",
+                "blocks": "never",
+                "classes": "always"
+            }
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "align": {
+                    "beforeColon": true,
+                    "afterColon": true,
+                    "on": "colon"
+                }
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 7,
+                "multiline": true
+            }
+        ],
+        "react/jsx-indent-props": [
+            "warn",
+            4
+        ],
+        "react/prefer-stateless-function": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "react/state-in-constructor": "off",
+        "react/static-property-placement": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-curly-newline": "off",
+        "arrow-parens": ["error", "as-needed"]
+    }
+}

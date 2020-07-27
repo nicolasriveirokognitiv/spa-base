@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Border Should match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-checked="false"
+    class="ant-switch"
+    role="switch"
+    type="button"
+  >
+    <span
+      class="ant-switch-inner"
+    />
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Static Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container-full"
+  >
+    <div
+      class="styled-wrapper    card-block"
+    >
+      <div
+        class="row flex-middle row-medium flex-row"
+      >
+        <div
+          class="col-6 col-sm-6"
+        >
+          <div
+            class="card-block-title"
+          />
+          <div
+            class="card-block-description"
+          />
+          <div
+            class="card-block-button text-align-left"
+          >
+            <a
+              class="ant-btn ant-btn-primary"
+              href="#"
+            />
+          </div>
+        </div>
+        <div
+          class="col-6 col-sm-6"
+        >
+          <div
+            class="card-block-img-placeholder"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

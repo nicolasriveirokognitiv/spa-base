@@ -1,0 +1,31 @@
+/////////////////////
+//  NOTIFICATION  //
+///////////////////
+.notification-block {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    min-height: @notification-block-min-height;
+    background: @notification-block-background;
+    border: @notification-block-border;
+    color: @notification-block-color;
+    padding: @notification-block-padding;
+
+
+    .notification-block-title,
+    .notification-block-description {
+        display: inline-block;
+    }
+
+    .notification-block-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        + .notification-block-description { margin-left: @notification-block-title-plus-description-margin-left; }
+    }
+
+    &.has-border { border: @notification-block-border-active; }
+
+    &.border-radius-circle { padding: @notification-block-padding-circle; }
+}

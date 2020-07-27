@@ -1,0 +1,215 @@
+/////////////////
+//  DEFAULTS  //
+///////////////
+// Antd variabled can be found here:
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+@font-size: 14px;
+@font-size-small: 12px;
+/* Small */
+@small-font-size: 85%;
+/* Code */
+@code-background: lighten(@color-black, 30%);
+@code-color: @color-secondary;
+@code-font-size: 90%;
+@code-padding: 2px 5px;
+/* Horizontal rule */
+@hr-border-top: 1px solid @color-border;
+@hr-margin: @margin-large auto;
+/* Mark */
+@mark-background: @color-red;
+@mark-padding: 0 2px;
+/* Utility (use these to set spacing throughout the app) */
+@margin: 16px;
+@margin-small: 8px;
+@margin-medium: 24px;
+@margin-large: 32px;
+@margin-xlarge: 48px;
+@padding: 16px;
+@padding-small: 8px;
+@padding-medium: 24px;
+@padding-large: 32px;
+@padding-xlarge: 48px;
+/* Icon */
+@icon-size: 24px;
+/* Border */
+@border: 1px solid @color-border-alt;
+@border-radius-slightly: 2px;
+@border-radius-medium: 4px;
+@border-radius-rounded: 8px;
+@border-radius-circle: 500px;
+/* Media queries */
+@breakpoint-small: 640px;
+@breakpoint-medium: 960px;
+@breakpoint-large: 1280px;
+@breakpoint-xlarge: 1440px;
+@breakpoint-xsmall-max: (@breakpoint-small - 1);
+@breakpoint-small-max: (@breakpoint-medium - 1);
+@breakpoint-medium-max: (@breakpoint-large - 1);
+@breakpoint-large-max: (@breakpoint-xlarge - 1);
+/* Container */
+@container-max-width: 1200px;
+@container-max-width-xsmall: 750px;
+@container-max-width-small: 900px;
+@container-max-width-large: 1600px;
+@container-padding: @padding-xlarge;
+@container-padding-small: @padding-medium;
+@container-padding-medium: @padding-large;
+
+//////////////
+//  EXTRA  //
+////////////
+@qa-block-wrapper-z-index: 2;
+@qa-block-wrapper-max-width: 470px;
+@qa-block-wrapper-border-radius: @border-radius-medium;
+@qa-block-wrapper-background: @color-white;
+@qa-block-wrapper-background-transparent: fadeout(@color-white, 95%);
+@qa-block-wrapper-elevation: '6px';
+@qa-block-wrapper-font-size: @font-size-small;
+@qa-block-wrapper-padding: 24px;
+@qa-block-data-plus-data-margin-top: 16px;
+@qa-block-data-row-plus-row-margin-top: 4px;
+@qa-block-data-title-color: @color-text-secondary;
+@qa-block-data-title-font-size: @font-size;
+@qa-block-data-title-font-weight: bold;
+@qa-block-data-title-text-transform: uppercase;
+@qa-block-data-row-label-min-width: 160px;
+@qa-block-data-row-label-font-weight: bold;
+@qa-block-data-button-plus-button-margin-left: 8px;
+@qa-block-data-button-border-radius: @border-radius-medium;
+@qa-block-data-button-background: @color-black;
+@qa-block-data-button-background-hover: lighten(@qa-block-data-button-background, 15%);
+@qa-block-data-button-color: @color-white;
+@qa-block-data-button-font-size: @font-size-small;
+@qa-block-data-button-font-weight: bold;
+@qa-block-data-button-text-transform: uppercase;
+@qa-block-data-button-padding: 6px 12px;
+@qa-block-data-button-disabled-opacity: .4;
+@qa-block-data-button-circle-border-radius: @border-radius-circle;
+@qa-block-data-button-circle-background: @qa-block-data-button-background;
+@qa-block-data-button-circle-background-hover: @qa-block-data-button-background-hover;
+@qa-block-data-button-circle-color: @qa-block-data-button-color;
+@qa-block-data-button-circle-padding: 8px;
+
+/////////////
+//  GRID  //
+///////////
+@columns: 12;
+@columnWidth: (100 / @columns);
+@columnGutter: (100 - (@columnWidth * @columns)) / (@columns - 1);
+@row-gutter: @padding-medium;
+@row-gutter-small: @padding-small;
+@row-gutter-medium: @padding-large;
+@row-gutter-large: @padding-xlarge;
+
+////////////////////
+//  MAIN WRAPPER //
+//////////////////
+/* Left */
+@wrapper-left-min-width: 300px;
+@wrapper-left-max-width: 400px;
+@wrapper-left-background: @color-white;
+@wrapper-left-border-right: @border;
+/* Right */
+@wrapper-right-width: calc(100% - @wrapper-left-min-width);
+
+////////////////
+//  TOOLBAR  //
+//////////////
+@toolbar-background: @color-white;
+@toolbar-border-bottom: @border;
+@toolbar-height: 54px;
+@toolbar-device-selector-height: @toolbar-height;
+@toolbar-device-selector-padding: 0 @padding-medium;
+@toolbar-device-selector-color: @color-text-secondary;
+@toolbar-device-selector-color-active: @color-primary;
+
+/////////////////////
+//  PAGE CONTROL  //
+///////////////////
+@page-control-header-height: @toolbar-height;
+@page-control-header-border-bottom: @border;
+@page-control-header-padding: 0 @padding;
+@page-control-header-logo-width: 40px;
+@page-control-header-logo-padding-right: @padding;
+@page-control-header-title-font-weight: bold;
+@page-control-header-title-text-transform: uppercase;
+@page-control-header-title-max-width: calc(100% - 32px);
+@page-control-item-min-height: 54px;
+@page-control-item-background-hover: darken(@color-white, 2%);
+@page-control-item-border-bottom: @border;
+@page-control-item-header-padding: 0 @padding;
+@page-control-item-header-icon-margin-left: @margin;
+@page-control-item-header-name-font-size: 12px;
+@page-control-item-header-name-text-transform: uppercase;
+@page-control-item-close-width: 56px;
+@page-control-item-close-opened-border-left: @border;
+@page-control-item-close-background-hover: @page-control-item-background-hover;
+@page-control-item-tabs-max-height: calc(100% - (@toolbar-height + @page-control-item-min-height));
+@page-control-item-tabs-bar-z-index: 2;
+@page-control-item-tabs-bar-background: @color-white;
+@page-control-item-tabs-container-padding: 0 @padding;
+@page-control-item-tabs-tabpane-margin-bottom: @padding;
+@page-control-item-tabs-tabpane-padding: 0 @padding;
+/* Tools */
+@page-control-tool-wrapper-min-height: @input-height-base;
+@page-control-tool-wrapper-plus-tool-wrapper-margin-top: 12px;
+@page-control-tool-wrapper-label-position-top: 2px;
+@page-control-tool-wrapper-label-position-left: 1px;
+@page-control-tool-wrapper-label-z-index: 1;
+@page-control-tool-wrapper-label-width: calc(100% - 25px); /* Chrome scroll bar width */
+@page-control-tool-wrapper-label-background: @input-bg;
+@page-control-tool-wrapper-label-color: @color-text-secondary;
+@page-control-tool-wrapper-label-font-size: 11px;
+@page-control-tool-wrapper-label-padding: 3px 11px;
+@page-control-tool-wrapper-type-switch-label-color: @color-text-primary;
+@page-control-tool-wrapper-type-switch-label-font-size: @font-size-base;
+@page-control-tool-wrapper-type-color-picker-input-width: calc(100% - @page-control-tool-wrapper-type-color-picker-picker-width);
+@page-control-tool-wrapper-type-color-picker-picker-width: 24px;
+@page-control-tool-wrapper-type-color-picker-picker-height: @input-height-base;
+@page-control-tool-wrapper-type-upload-border-radius: @border-radius-slightly;
+@page-control-tool-wrapper-type-upload-border: 1px dashed @color-border;
+@page-control-tool-wrapper-type-upload-border-hover: @color-primary;
+@page-control-tool-wrapper-type-upload-background: lighten(@color-black, 95%);
+@page-control-tool-wrapper-type-upload-padding: @padding-large @padding;
+@page-control-tool-wrapper-type-upload-label-font-size: @font-size-small;
+@page-control-tool-wrapper-type-upload-label-margin-top: @margin-small;
+
+//////////////////
+//  PAGE VIEW  //
+////////////////
+@page-view-wrapper-height: calc(100vh - @toolbar-height);
+@page-view-wrapper-background: @color-white-washed;
+@page-view-wrapper-padding: @padding;
+@page-view-wrapper-desktop-max-width: 1440px;
+@page-view-wrapper-tablet-width: 1024px;
+@page-view-wrapper-tablet-max-height: 768px;
+@page-view-wrapper-mobile-width: 375px;
+@page-view-wrapper-mobile-max-height: 667px;
+@page-view-engine-elevation: '4px';
+@page-view-engine-background: @color-white;
+
+///////////////
+//  BLOCKS  //
+/////////////
+// Notification
+@notification-block-min-height: 48px;
+@notification-block-background: @color-yellow;
+@notification-block-border: 2px solid transparent;
+@notification-block-border-active: 2px solid @color-border-alt;
+@notification-block-color: @color-text-primary;
+@notification-block-padding: 12px;
+@notification-block-padding-circle: 24px 32px;
+@notification-block-title-plus-description-margin-left: 8px;
+// Card
+@card-block-color: @color-text-primary;
+@card-block-border-active: 2px solid @color-border-alt;
+@card-block-padding: @padding-xlarge;
+@card-block-header-font-size: 20px;
+@card-block-header-font-weight: bold;
+@card-block-header-margin-bottom: @margin;
+@card-block-title-font-size: 24px;
+@card-block-title-font-weight: bold;
+@card-block-title-margin-bottom: 12px;
+@card-block-description-margin-bottom: 18px;
+@card-block-img-placeholder-min-height: 320px;
+@card-block-img-placeholder-background: lighten(@color-black, 85%);

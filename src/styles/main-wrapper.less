@@ -1,0 +1,17 @@
+/////////////////////
+//  MAIN WRAPPER  //
+///////////////////
+.main-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    .wrapper-left {
+        min-width: @wrapper-left-min-width;
+        max-width: @wrapper-left-max-width;
+        width: @wrapper-left-min-width;
+        background: @wrapper-left-background;
+        border-right: @wrapper-left-border-right;
+    }
+
+    .wrapper-right { width: @wrapper-right-width; }
+}

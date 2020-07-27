@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StructureManager Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="page-control-item"
+  >
+    <div
+      class="page-control-item-header"
+    >
+      <span
+        class="page-control-item-header-icon bm-icon-message-alert"
+      />
+      <span
+        class="page-control-item-header-name"
+      >
+        Notification
+      </span>
+    </div>
+  </div>
+  <div
+    class="page-control-item"
+  >
+    <div
+      class="page-control-item-header"
+    >
+      <span
+        class="page-control-item-header-icon bm-icon-message-alert"
+      />
+      <span
+        class="page-control-item-header-name"
+      >
+        Notification
+      </span>
+    </div>
+  </div>
+  <div
+    class="page-control-item"
+  >
+    <div
+      class="page-control-item-header"
+    >
+      <span
+        class="page-control-item-header-icon bm-icon-image-with-text"
+      />
+      <span
+        class="page-control-item-header-name"
+      >
+        Image with text
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

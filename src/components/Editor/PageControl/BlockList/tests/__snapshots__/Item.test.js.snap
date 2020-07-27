@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="page-control-item  is-open"
+  >
+    <div
+      class="page-control-item-header"
+    >
+      <span
+        class="page-control-item-header-icon bm-icon-icon"
+      />
+      <span
+        class="page-control-item-header-name"
+      >
+        foo
+      </span>
+    </div>
+    <div
+      class="page-control-item-close"
+    >
+      <span
+        class="bm-icon-times"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

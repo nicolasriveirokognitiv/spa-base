@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Should match snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="ant-input"
+    placeholder="Title"
+    type="text"
+    value=""
+  />
+</DocumentFragment>
+`;

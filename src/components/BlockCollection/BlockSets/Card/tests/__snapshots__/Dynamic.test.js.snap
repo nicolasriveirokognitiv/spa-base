@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Dynamic Should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="image-with-text-dynamic"
+  >
+    Dynamic Card
+  </div>
+</DocumentFragment>
+`;

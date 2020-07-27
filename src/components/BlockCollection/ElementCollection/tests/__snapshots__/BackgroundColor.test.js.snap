@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundColor Should match snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="ant-input"
+    placeholder="#ffc900"
+    type="text"
+    value="#ffc900"
+  />
+</DocumentFragment>
+`;

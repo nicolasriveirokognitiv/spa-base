@@ -1,0 +1,253 @@
+//////////////
+//  RESET  //
+////////////
+button[disabled],
+html input[disabled] {
+    cursor: not-allowed;
+}
+
+a,
+.link {
+    text-decoration: none;
+    color: @color-link;
+    -webkit-text-decoration-skip: objects;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        color: @color-link-hover;
+        outline: none;
+    }
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+small { font-size: @small-font-size; }
+
+code,
+kbd,
+pre,
+samp {
+    font-family: "Courier New", monospace;
+}
+
+code {
+    background: @code-background;
+    color: @code-color;
+    font-size: @code-font-size;
+    padding: @code-padding;
+}
+
+hr {
+    clear: both;
+    border: 0;
+    border-top: @hr-border-top;
+    margin: @hr-margin;
+}
+
+mark,
+.mark {
+    background: @mark-background;
+    padding: @mark-padding;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+audio,
+canvas,
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: middle;
+}
+
+figure { margin: 0; }
+
+.img-preserve,
+.img-preserve img {
+    max-width: none;
+}
+
+/* IE Fix overflow */
+svg:not(:root) { overflow: hidden; }
+
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
+    margin: 0 0 @margin 0;
+}
+
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+    margin-top: @margin;
+}
+
+ul {
+    li {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// HTML 5 ///////////
+iframe { border: 0; }
+
+/* Most browsers prevent the 300ms delay automatically for sites that use the `width=device-width` property. */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}
+
+summary { display: block; }
+
+[class^="bm-icon-"],
+[class*=" bm-icon-"] {
+    font-size: @icon-size;
+}
+
+// QA FUNCTIONALITY
+.qa-block-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: @qa-block-wrapper-z-index;
+    max-width: @qa-block-wrapper-max-width;
+    border-radius: @qa-block-wrapper-border-radius;
+    background: @qa-block-wrapper-background;
+    .elevation(@qa-block-wrapper-elevation);
+    font-size: @qa-block-wrapper-font-size;
+    padding: @qa-block-wrapper-padding;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility, background;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+    &.is-visible {
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
+
+    &.is-transparent {
+        background: @qa-block-wrapper-background-transparent;
+        overflow: hidden;
+        pointer-events: none;
+
+        .qa-block-data {
+            .qa-block-data-row {
+                > *:not(.qa-block-data-buttons) {
+                    opacity: .2;
+                    pointer-events: none;
+                }
+
+                > .qa-block-data-buttons {
+                    pointer-events: all;
+
+                    > *:not(.qa-block-data-toggle) {
+                        opacity: .2;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .qa-block-data {
+        + .qa-block-data { margin-top: @qa-block-data-plus-data-margin-top; }
+
+        .qa-block-data-row {
+            + .qa-block-data-row { margin-top: @qa-block-data-row-plus-row-margin-top; }
+
+            .qa-block-data-title {
+                color: @qa-block-data-title-color;
+                font-size: @qa-block-data-title-font-size;
+                font-weight: @qa-block-data-title-font-weight;
+                text-transform: @qa-block-data-title-text-transform;
+            }
+
+            .qa-block-data-buttons {
+                .qa-block-data-button-circle {
+                    border-radius: @qa-block-data-button-circle-border-radius;
+                    background: @qa-block-data-button-circle-background;
+                    color: @qa-block-data-button-circle-color;
+                    padding: @qa-block-data-button-circle-padding;
+                    cursor: pointer;
+
+                    + .qa-block-data-button-circle { margin-left: @qa-block-data-button-plus-button-margin-left; }
+
+                    &:hover { background: @qa-block-data-button-circle-background-hover; }
+                }
+            }
+
+            .qa-block-data-label,
+            .qa-block-data-content {
+                display: inline-block;
+            }
+
+            .qa-block-data-label {
+                min-width: @qa-block-data-row-label-min-width;
+                font-weight: @qa-block-data-row-label-font-weight;
+            }
+
+            textarea {
+                width: 100%;
+                font-family: 'Courier New', Courier, monospace;
+                padding-top: 10.5px;
+            }
+        }
+
+        .qa-block-data-button {
+            border: 0;
+            border-radius: @qa-block-data-button-border-radius;
+            background: @qa-block-data-button-background;
+            color: @qa-block-data-button-color;
+            font-size: @qa-block-data-button-font-size;
+            font-weight: @qa-block-data-button-font-weight;
+            text-transform: @qa-block-data-button-text-transform;
+            padding: @qa-block-data-button-padding;
+            cursor: pointer;
+
+            + .qa-block-data-button { margin-left: @qa-block-data-button-plus-button-margin-left; }
+
+            &:hover { background: @qa-block-data-button-background-hover; }
+
+            &[disabled] {
+                opacity: @qa-block-data-button-disabled-opacity;
+                pointer-events: none;
+            }
+        }
+    }
+}

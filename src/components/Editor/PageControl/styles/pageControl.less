@@ -1,0 +1,193 @@
+/////////////////////
+//  PAGE CONTROL  //
+///////////////////
+.page-control {
+    height: 100vh;
+
+    .page-control-header {
+        display: flex;
+        align-items: center;
+        height: @page-control-header-height;
+        border-bottom: @page-control-header-border-bottom;
+        padding: @page-control-header-padding;
+
+        .page-control-header-logo {
+            width: @page-control-header-logo-width;
+            padding-right: @page-control-header-logo-padding-right;
+        }
+
+        .page-control-header-title {
+            font-weight: @page-control-header-title-font-weight;
+            text-transform: @page-control-header-title-text-transform;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: @page-control-header-title-max-width;
+            margin: 0;
+        }
+    }
+
+    .page-control-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: @page-control-item-min-height;
+        border-bottom: @page-control-item-border-bottom;
+        cursor: pointer;
+
+        &:hover { background: @page-control-item-background-hover; }
+
+        .page-control-item-header {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            padding: @page-control-item-header-padding;
+
+            .page-control-item-header-icon { margin-right: @page-control-item-header-icon-margin-left; }
+
+            .page-control-item-header-name {
+                font-size: @page-control-item-header-name-font-size;
+                text-transform: @page-control-item-header-name-text-transform;
+            }
+        }
+
+        .page-control-item-close {
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+            justify-content: center;
+            width: @page-control-item-close-width;
+            flex-shrink: 0;
+            transition: background .15s ease-in-out;
+            cursor: pointer;
+
+            [class^="bm-icon-"],
+            [class*=" bm-icon-"] {
+                color: @icon-color;
+            }
+
+            &:hover {
+                background: @page-control-item-close-background-hover;
+
+                [class^="bm-icon-"],
+                [class*=" bm-icon-"] {
+                    color: @icon-color-hover;
+                }
+            }
+        }
+
+        &.is-open {
+            &:hover {
+                background: transparent;
+                cursor: default;
+            }
+
+            .page-control-item-header {
+                .page-control-item-header-name { font-weight: bold; }
+            }
+
+            .page-control-item-close { border-left: @page-control-item-close-opened-border-left; }
+        }
+    }
+}
+
+.page-control-item-tabs {
+    max-height: @page-control-item-tabs-max-height;
+    overflow: auto;
+
+    // .ant-tabs {
+    //     overflow: initial;
+    //     overflow-x: hidden;
+
+    //     .ant-tabs-bar {
+    //         position: sticky;
+    //         position: -webkit-sticky;
+    //         top: 0;
+    //         z-index: @page-control-item-tabs-bar-z-index;
+    //         background: @page-control-item-tabs-bar-background;
+    //     }
+    // }
+
+    .ant-tabs-nav-container { padding: @page-control-item-tabs-container-padding; }
+
+    .ant-tabs-tabpane {
+        margin-bottom: @page-control-item-tabs-tabpane-margin-bottom;
+        padding: @page-control-item-tabs-tabpane-padding;
+    }
+}
+
+.tool-wrapper {
+    position: relative;
+    min-height: @page-control-tool-wrapper-min-height;
+
+    + .tool-wrapper { margin-top: @page-control-tool-wrapper-plus-tool-wrapper-margin-top; }
+
+    .tool-input-label {
+        position: absolute;
+        top: @page-control-tool-wrapper-label-position-top;
+        left: @page-control-tool-wrapper-label-position-left;
+        z-index: @page-control-tool-wrapper-label-z-index;
+        width: @page-control-tool-wrapper-label-width;
+        background: @page-control-tool-wrapper-label-background;
+        color: @page-control-tool-wrapper-label-color;
+        font-size: @page-control-tool-wrapper-label-font-size;
+        padding: @page-control-tool-wrapper-label-padding;
+        padding-bottom: 0;
+    }
+
+    &.type-switch {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tool-input-label {
+            position: static;
+            background: transparent;
+            color: @page-control-tool-wrapper-type-switch-label-color;
+            font-size: @page-control-tool-wrapper-type-switch-label-font-size;
+            padding: 0;
+        }
+    }
+
+    &.type-color-picker {
+        .tool-color-picker {
+            display: flex;
+            align-items: center;
+
+            .ant-input { width: @page-control-tool-wrapper-type-color-picker-input-width; }
+
+            input[type="color"] {
+                width: @page-control-tool-wrapper-type-color-picker-picker-width;
+                height: @page-control-tool-wrapper-type-color-picker-picker-height;
+                padding: 0;
+                border: 0;
+            }
+        }
+    }
+
+    &.type-url {
+        .tool-input-label { display: none; }
+
+        .ant-input { padding-bottom: 11px; }
+    }
+
+    &.type-upload {
+        .tool-input-label { display: none; }
+
+        .upload-image-block-container {
+            border-radius: @page-control-tool-wrapper-type-upload-border-radius;
+            border: @page-control-tool-wrapper-type-upload-border;
+            background: @page-control-tool-wrapper-type-upload-background;
+            text-align: center;
+            padding: @page-control-tool-wrapper-type-upload-padding;
+            cursor: pointer;
+
+            &:hover { border-color: @page-control-tool-wrapper-type-upload-border-hover; }
+
+            .upload-image-block-label {
+                font-size: @page-control-tool-wrapper-type-upload-label-font-size;
+                margin-top: @page-control-tool-wrapper-type-upload-label-margin-top;
+            }
+        }
+    }
+}

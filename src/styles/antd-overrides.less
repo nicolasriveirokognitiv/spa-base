@@ -1,0 +1,69 @@
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'BM-Font';
+@text-color: @color-text-primary;
+@heading-color: @color-text-primary;
+@text-color-secondary: @color-text-secondary;
+@disabled-color: @color-text-disabled;
+@primary-color: @color-primary;
+@success-color: @color-green;
+@warning-color: @color-yellow;
+@error-color: @color-red;
+@icon-color: @color-text-secondary;
+@icon-color-hover: @color-text-primary;
+@input-height-base: 45px;
+@btn-height-base: 36px;
+@btn-primary-bg: #454545;
+@btn-padding-horizontal-base: @padding-medium;
+
+.ant-tabs-bar {
+    border-bottom: 2px solid @color-border-alt;
+
+    .ant-tabs-nav-container {
+        margin-bottom: -2px;
+
+        .ant-tabs-nav {
+            .ant-tabs-tab {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.ant-input {
+    height: @input-height-base;
+    padding-bottom: 0;
+
+    &:focus,
+    &-focused {
+        box-shadow: none;
+    }
+
+    textarea& { padding-top: 18px; }
+}
+
+.ant-select { width: 100%; }
+
+.ant-select-focused {
+    &.ant-select-single {
+        &:not(.ant-select-customize-input)  {
+            .ant-select-selector { box-shadow: none; }
+        }
+    }
+}
+
+.ant-select-single {
+    .ant-select-selector {
+        .ant-select-selection-item,
+        .ant-select-selection-placeholder {
+            line-height: 53px;
+        }
+    }
+}
+
+.ant-btn {
+    background: @btn-primary-bg;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: @btn-padding-horizontal-base;
+    padding-right: @btn-padding-horizontal-base;
+}

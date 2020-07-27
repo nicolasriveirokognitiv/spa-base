@@ -1,0 +1,7 @@
+const BLOCK_SELECTED = 'BLOCK_SELECTED';
+const PAGE_SET = 'PAGE_SET';
+
+export {
+    BLOCK_SELECTED,
+    PAGE_SET,
+};

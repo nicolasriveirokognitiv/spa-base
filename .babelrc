@@ -1,0 +1,24 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "Classes": "./src/classes",
+                    "Components": "./src/components",
+                    "Constants": "./src/constants",
+                    "State": "./src/state",
+                    "Services": "./src/services",
+                    "Utils": "./src/utils",
+                    "Hooks": "./src/hooks",
+                    "Mocks": "./src/mocks"
+                }
+            }
+        ]
+    ]
+}

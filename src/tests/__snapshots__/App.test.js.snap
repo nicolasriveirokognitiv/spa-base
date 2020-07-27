@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component App should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="main-wrapper"
+  >
+    <div
+      class="wrapper-left"
+    >
+      <div
+        class="page-control"
+      >
+        <div
+          class="page-control-header"
+        >
+          <img
+            alt="kognitiv"
+            class="page-control-header-logo"
+            src="/static/img/logo.svg"
+          />
+          <h4
+            class="page-control-header-title"
+          >
+            New Landing Page
+          </h4>
+        </div>
+        <div
+          class="page-control-item"
+        >
+          <div
+            class="page-control-item-header"
+          >
+            <span
+              class="page-control-item-header-icon bm-icon-message-alert"
+            />
+            <span
+              class="page-control-item-header-name"
+            >
+              Notification
+            </span>
+          </div>
+        </div>
+        <div
+          class="page-control-item"
+        >
+          <div
+            class="page-control-item-header"
+          >
+            <span
+              class="page-control-item-header-icon bm-icon-message-alert"
+            />
+            <span
+              class="page-control-item-header-name"
+            >
+              Notification
+            </span>
+          </div>
+        </div>
+        <div
+          class="page-control-item"
+        >
+          <div
+            class="page-control-item-header"
+          >
+            <span
+              class="page-control-item-header-icon bm-icon-image-with-text"
+            />
+            <span
+              class="page-control-item-header-name"
+            >
+              Image with text
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wrapper-right"
+    >
+      <div
+        class="toolbar"
+      >
+        <div
+          class="toolbar-device-selector"
+        >
+          <div
+            class="ant-tabs ant-tabs-top ant-tabs-line"
+          >
+            <div
+              class="ant-tabs-bar ant-tabs-top-bar"
+              role="tablist"
+              tabindex="-1"
+            >
+              <div
+                class="ant-tabs-nav-container"
+              >
+                <span
+                  class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+                  unselectable="unselectable"
+                >
+                  <span
+                    class="ant-tabs-tab-prev-icon"
+                  >
+                    <span
+                      aria-label="left"
+                      class="anticon anticon-left ant-tabs-tab-prev-icon-target"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="left"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+                  unselectable="unselectable"
+                >
+                  <span
+                    class="ant-tabs-tab-next-icon"
+                  >
+                    <span
+                      aria-label="right"
+                      class="anticon anticon-right ant-tabs-tab-next-icon-target"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="right"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+                <div
+                  class="ant-tabs-nav-wrap"
+                >
+                  <div
+                    class="ant-tabs-nav-scroll"
+                  >
+                    <div
+                      class="ant-tabs-nav ant-tabs-nav-animated"
+                    >
+                      <div>
+                        <div
+                          aria-controls="tabpane-is-desktop"
+                          aria-disabled="false"
+                          aria-selected="true"
+                          class="ant-tabs-tab-active ant-tabs-tab"
+                          id="tab-is-desktop"
+                          role="tab"
+                          tabindex="0"
+                        >
+                          <span
+                            class="bm-icon-desktop"
+                          />
+                        </div>
+                        <div
+                          aria-controls="tabpane-is-tablet"
+                          aria-disabled="false"
+                          aria-selected="false"
+                          class=" ant-tabs-tab"
+                          id="tab-is-tablet"
+                          role="tab"
+                          tabindex="-1"
+                        >
+                          <span
+                            class="bm-icon-tablet"
+                          />
+                        </div>
+                        <div
+                          aria-controls="tabpane-is-mobile"
+                          aria-disabled="false"
+                          aria-selected="false"
+                          class=" ant-tabs-tab"
+                          id="tab-is-mobile"
+                          role="tab"
+                          tabindex="-1"
+                        >
+                          <span
+                            class="bm-icon-mobile"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                        style="transform: translate3d(0px,0,0); webkit-transform: translate3d(0px,0,0); width: 0px; display: block;"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="ant-tabs-content ant-tabs-content-animated ant-tabs-top-content"
+              style="margin-left: 0%;"
+            >
+              <div
+                aria-hidden="false"
+                class="ant-tabs-tabpane ant-tabs-tabpane-active"
+                role="tabpanel"
+                style="visibility: visible;"
+                tabindex="0"
+              />
+              <div
+                aria-hidden="true"
+                class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+                role="tabpanel"
+                style="visibility: hidden;"
+                tabindex="-1"
+              />
+              <div
+                aria-hidden="true"
+                class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+                role="tabpanel"
+                style="visibility: hidden;"
+                tabindex="-1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="page-view-wrapper is-desktop"
+      >
+        <div
+          class="render-engine"
+        >
+          <div
+            class="section"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-12"
+              >
+                <div
+                  class="container-full"
+                >
+                  <div
+                    class="styled-wrapper border-radius-slightly   notification-block has-border"
+                  >
+                    <div
+                      class="notification-block-title"
+                    >
+                      Notification Title
+                    </div>
+                    <div
+                      class="notification-block-description"
+                    >
+                      This is a notification for you to be notified
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-12"
+              >
+                <div
+                  class="container-full"
+                >
+                  <div
+                    class="styled-wrapper    notification-block"
+                  >
+                    <div
+                      class="notification-block-title"
+                    >
+                      Notification Title
+                    </div>
+                    <div
+                      class="notification-block-description"
+                    >
+                      This is a notification for you to be notified
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-12"
+              >
+                <div
+                  class="container-full"
+                >
+                  <div
+                    class="styled-wrapper    card-block"
+                  >
+                    <div
+                      class="row flex-middle row-medium flex-row"
+                    >
+                      <div
+                        class="col-6 col-sm-6"
+                      >
+                        <div
+                          class="card-block-title"
+                        >
+                          Best travel destination ever
+                        </div>
+                        <div
+                          class="card-block-description"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis sem sit amet urna egestas, eget dapibus tellus malesuada. Ut eu elementum lacus. Ut eu elementum lacus.
+                        </div>
+                        <div
+                          class="card-block-button text-align-left"
+                        >
+                          <a
+                            class="ant-btn ant-btn-primary"
+                            href="#"
+                          >
+                            <span>
+                              Sample Text
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="col-6 col-sm-6"
+                      >
+                        <div
+                          class="card-block-img-placeholder"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

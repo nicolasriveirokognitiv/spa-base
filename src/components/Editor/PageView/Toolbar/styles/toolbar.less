@@ -1,0 +1,29 @@
+////////////////
+//  TOOLBAR  //
+//////////////
+.toolbar {
+    height: @toolbar-height;
+    background: @toolbar-background;
+    border-bottom: @toolbar-border-bottom;
+
+    .toolbar-device-selector {
+        display: flex;
+        align-items: flex-end;
+        height: @toolbar-device-selector-height;
+        padding: @toolbar-device-selector-padding;
+
+        .ant-tabs-bar {
+            border-color: transparent;
+            margin: 0;
+
+            .ant-tabs-tab {
+                color: @toolbar-device-selector-color;
+
+                &.ant-tabs-tab-active,
+                &:hover {
+                    color: @toolbar-device-selector-color-active;
+                }
+            }
+        }
+    }
+}

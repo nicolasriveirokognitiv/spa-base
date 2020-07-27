@@ -1,0 +1,10 @@
+<svg width="30" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 22">
+    <g xmlns="http://www.w3.org/2000/svg" id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="Artboard" transform="translate(-374.000000, -356.000000)" fillRule="nonzero">
+            <g id="kognitiv-logo" transform="translate(374.000000, 356.000000)">
+                <polygon id="Path" className="text" fill="#000000" points="0 0 3.66668246 0 3.66668246 9.30369668 3.91443128 9.30369668 11.8132464 0 16.293128 0 8.4642654 9.08509479 16.3630806 20.2483649 11.9531517 20.2483649 5.91099526 11.5684123 3.66668246 14.2178673 3.66668246 20.2483649 0 20.2483649" />
+                <rect id="Rectangle" fill="#FFC703" width="14" height="3" x="20" y="17" />
+            </g>
+        </g>
+    </g>
+</svg>
